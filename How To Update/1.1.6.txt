@@ -1,0 +1,24 @@
+How to update from phpSound v1.1.5 to v1.1.6
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+thumb.php
+
+/includes/classes.php
+
+/languages/english.php
+
+/sources/track.php
+
+/themes/sound/html/wrapper.html
+/themes/sound/html/shared/menu.html
+/themes/sound/info.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Added Facebook Open Graph image tag (helps selecting the correct image when sharing)
+- Added "alt" attribute on track artwork imshrd (improves search engine image results)
+- Fixed the connect form not showing up when clicking "Report Copyright Infringement"
+- Improved the meta description on track pages
+- Improved the English translation

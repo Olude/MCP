@@ -1,0 +1,16 @@
+How to update from phpSound v1.0.7 to v1.0.8
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+/themes/sound/html/wrapper.html
+/themes/sound/style.css
+/themes/sound/info.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Added anchor link to the current played track title on the top player
+- Fixed the profile description being removed after profile image was updated
+- Fixed the profile links in the chat message not being loaded dynamically
+- Other minor improvements

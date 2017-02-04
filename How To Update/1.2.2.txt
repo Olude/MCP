@@ -1,0 +1,20 @@
+How to update from phpSound v1.2.1 to v1.2.2
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/sources/upload.php
+/sources/track.php
+
+/themes/sound/html/track/edit.html
+/themes/sound/html/wrapper.html
+/themes/sound/js/functions.js
+/themes/sound/info.php
+
+info.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Improved the search input behaviour
+- Fixed the upload and edit forms not submitting after the last update
+- Fixed the plays counter not counting after the last update

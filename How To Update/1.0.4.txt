@@ -1,0 +1,30 @@
+How to update from phpSound v1.0.3 to v1.0.4
+
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+/languages/english.php
+/requests/load_tags.php
+/sources/explore.php
+/sources/search.php
+/sources/notifications.php
+/sources/track.php
+/sources/playlist.php
+
+/themes/sound/html/admin/themes.html
+/themes/sound/html/shared/content.html
+/themes/sound/js/functions.js
+/themes/sound/style.css
+/themes/sound/icon.png
+/themes/sound/info.php
+
+----------------------------------------------------------------------------
+--------------------------------- Changelog --------------------------------
+- Added titles for the Explore, Notifications and Search page
+- Improved the display of sidebar categories from the Explore page
+- Improved the themes listing in the Admin Panel
+- Improved the #hashtag search results
+- Improved the translation
+- Other minor improvements

@@ -1,0 +1,19 @@
+How to update from phpSound v1.0.2 to v1.0.3
+
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+/languages/english.php
+
+/themes/sound/js/functions.js
+/themes/sound/style.css
+/themes/sound/info.php
+
+----------------------------------------------------------------------------
+--------------------------------- Changelog --------------------------------
+- Added Popular Music filter which will display the trending music in the last 7 days
+- Added Stream and Explore menu button highlight (now they appear as active when on page)
+- Improved the download function (now it gets the Title name of the track)
+- Improved how the category text are being displayed on the tracks

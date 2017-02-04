@@ -1,0 +1,13 @@
+How to update from phpSound v1.1.3 to v1.1.4
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Changed the number of #hastags displayed for tracks & playlists from 10 to 15
+- Changed the #hashtags order on the tracks page to the order they've been added
+- Fixed the #hashtags not being displayed properly when they were numbers
+- Fixed the #hashtag links in comments not being linked properly

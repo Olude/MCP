@@ -1,0 +1,46 @@
+How to update from phpSound v1.2.0 to v1.2.1
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+
+/languages/english.php
+
+/requests/*.php (all the files)
+
+/sources/admin.php
+/sources/pro.php
+/sources/recover.php
+/sources/settings.php
+/sources/stream.php
+
+/themes/sound/html/admin/*.html (all the files)
+/themes/sound/html/settings/*.html (all the files)
+/themes/sound/html/recover/error.html
+/themes/sound/html/shared/menu.html
+/themes/sound/html/wrapper.html
+/themes/sound/js/functions.js
+/themes/sound/info.php
+/themes/sound/style.css
+
+index.php
+info.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Added keyboard controls: Space (play/pause), [R]epeat, [M]ute, > (next), < (prev)
+- Added infinite scrolling when hitting the end of the page on Desktop browsers
+- Added automatic new tracks load when on last track on the page
+- Added Facebook profile image fetch when registering trough facebook
+- Added current password confirmation requirement when changing a password
+- Added password repeat confirmation requirement when changing a password
+- Added security protection against CSRF attacks
+- Added "View Comment" button for the reported comments in the Admin Panel
+- Added visual highlight for comments when viewed from the Admin Panel
+- Improved the search results on Enter keypress (now it loads dynamically)
+- Improved the user deletion message (now shows the username instead of the id)
+- Improved the English translation
+- Changed the default search filter to Tracks instead of People
+- Changed the minimum password length from 3 to 6 characters
+- Fixed an issue with the emulated Payment appearing as being a Monthly plan

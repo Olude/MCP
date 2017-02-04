@@ -1,0 +1,13 @@
+How to update from phpSound v1.1.6 to v1.1.7
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/themes/sound/html/wrapper.html
+/themes/sound/info.php
+/themes/sound/style.css
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Added track artwork of the current playing song to the top bar player
+- Improved the listing player (now it updates when you navigate on another page)

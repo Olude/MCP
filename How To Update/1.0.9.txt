@@ -1,0 +1,17 @@
+How to update from phpSound v1.0.8 to v1.0.9
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+
+/themes/sound/style.css
+/themes/sound/info.php
+
+/sources/admin.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Improved the comments mouse hover spacing
+- Improved the Admin page title
+- Other minor improvements

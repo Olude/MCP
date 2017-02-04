@@ -1,0 +1,31 @@
+How to update from phpSound v1.1.9 to v1.2.0
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+
+/languages/english.php
+
+/sources/admin.php
+/sources/settings.php
+
+/themes/sound/html/admin/dashboard.html
+/themes/sound/html/admin/general.html
+/themes/sound/html/shared/menu.html
+/themes/sound/images/icons/admin.png
+/themes/sound/info.php
+/themes/sound/style.css
+
+index.php
+info.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Added Admin Panel Dashboard (today's stats, 7 days graph stats, site info)
+- Added an icon on the top bar which indicates when logged-in as Admin
+- Improved the Live Search (now excludes private and suspended tracks)
+- Improved the User Deletion function (likes counter of liked tracks is now updated)
+- Improved the Image and Cover upload functions (old images are now deleted)
+- Improved the Track Art edit function (old image is now deleted)
+- Improved the English translation

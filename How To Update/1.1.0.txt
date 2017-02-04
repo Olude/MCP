@@ -1,0 +1,21 @@
+How to update from phpSound v1.0.9 to v1.1.0
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+/languages/english.php
+
+/themes/sound/html/wrapper.html
+/themes/sound/html/admin/manage_categories.html
+/themes/sound/info.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Added a new Explore filter: Liked music
+- Added title tooltips for the top player
+- Improved the upload validation process (text inputs are now validated first)
+- Improved the profile links within the Admin Panel (now link to the Manage Users)
+- Improved the translation
+- Updated the Documentation (Developers section)
+- Other minor improvements

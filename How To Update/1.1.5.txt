@@ -1,0 +1,14 @@
+How to update from phpSound v1.1.4 to v1.1.5
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+/languages/english.php
+embed.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Improved the English translation
+- Fixed an issue with the Playlist Search not loading up new results
+- Removed the favicon from the embeded player

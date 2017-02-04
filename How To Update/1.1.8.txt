@@ -1,0 +1,14 @@
+How to update from phpSound v1.1.7 to v1.1.8
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+
+/themes/sound/js/functions.js
+/themes/sound/info.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Fixed an issue with Popular and Liked Music Pages showing tracks duplicated
+- Improved the listing player (now it updates when you load up new tracks)

@@ -1,0 +1,13 @@
+How to update from phpSound v1.1.2 to v1.1.3
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+/languages/english.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Improved the English language file
+- Fixed the track tags on the "Liked Music" page
+- Fixed category name allowing special characters in Admin Panel

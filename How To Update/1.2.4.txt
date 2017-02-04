@@ -1,0 +1,57 @@
+How to update from phpSound v1.2.3 to v1.2.4 [Don't forget to back up your database/files before proceeding]
+----------------------------------------------------------------------------
+--------------------------------- MySQL ------------------------------------
+Log-in into phpMyAdmin (or your MySQL database) and on the SQL tab run the following query:
+
+ALTER TABLE  `settings` ADD  `tracking_code` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER  `ad7`;
+ALTER TABLE  `settings` DROP `notificationl`, DROP `notificationc`, DROP `notifications`, DROP `notificationd`, DROP `notificationf`, DROP `qperpage`;
+ALTER TABLE  `settings` ADD  `smtp_email` INT NOT NULL AFTER  `fbappsecret` ,
+ADD  `smtp_host` VARCHAR( 128 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER  `smtp_email` ,
+ADD  `smtp_port` INT NOT NULL AFTER  `smtp_host` ,
+ADD  `smtp_auth` INT NOT NULL AFTER  `smtp_port` ,
+ADD  `smtp_username` VARCHAR( 128 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER  `smtp_auth` ,
+ADD  `smtp_password` VARCHAR( 128 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER  `smtp_username`;
+
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/phpmailer/ (all the files)
+/includes/classes.php
+
+/languages/english.php
+
+/requests/add_view.php
+/requests/load_people.php
+/requests/load_search.php
+/requests/post_track.php
+
+/sources/admin.php
+/sources/search.php
+/sources/track.php
+/sources/upload.php
+/sources/settings.php
+
+/themes/sound/html/admin/ (all the files)
+/themes/sound/html/pro/gopro.html
+/themes/sound/html/settings/blocked.html
+/themes/sound/html/track/edit.html
+/themes/sound/html/wrapper.html
+/themes/sound/js/functions.js
+/themes/sound/info.php
+/themes/sound/style.css
+
+index.php
+info.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Reworked the General, Users and Social settings pages from the Admin Panel
+- Added Upload Progress bar
+- Added SMTP integration
+- Added "Blocked Users" page in Users Settings which shows all the blocked users
+- Added "Likes" and "Playlists" buttons for quick access in the drop-down menu
+- Changed the way plays are counted (now they are counted at the start of a song)
+- Improved the English language
+- Fixed the Popular and Liked Music filters showing private tracks
+- Other minor improvements

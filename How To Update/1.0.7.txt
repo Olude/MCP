@@ -1,0 +1,69 @@
+How to update from phpSound v1.0.6 to v1.0.7
+----------------------------------------------------------------------------
+--------------------------------- MySQL ------------------------------------
+Log-in into phpMyAdmin (or your MySQL database) and on the SQL tab run the following queries:
+
+ALTER TABLE  `users` ADD  `ip` VARCHAR( 45 ) NOT NULL AFTER  `offline`;
+ALTER TABLE  `settings` ADD  `aperip` INT NOT NULL AFTER  `lperpost`;
+ALTER TABLE  `settings` CHANGE  `tracksizetotal`  `tracksizetotal` BIGINT( 12 ) NOT NULL;
+ALTER TABLE  `tracks` ADD  `downloads` INT NOT NULL AFTER  `likes`;
+CREATE TABLE IF NOT EXISTS `downloads` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `by` int(11) NOT NULL,
+  `track` int(11) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+
+/languages/english.php
+
+/requests/connect.php
+/requests/download.php
+
+/sources/admin.php
+/sources/profile.php
+/sources/stats.php
+/sources/track.php
+
+/themes/sound/html/wrapper.html
+/themes/sound/html/admin/general.html
+/themes/sound/html/admin/stats.html
+/themes/sound/html/pro/gopro.html
+/themes/sound/html/stats/rows.html
+/themes/sound/html/track/stats.html
+/themes/sound/html/welcome/content.html
+/themes/sound/js/jquery.jplayer.min.js
+/themes/sound/js/jquery.jplayer.swf
+/themes/sound/js/functions.js
+/themes/sound/images/background.png
+/themes/sound/images/logo.png
+/themes/sound/images/logo_black.png
+/themes/sound/style.css
+/themes/sound/icon.png
+/themes/sound/info.php
+
+/uploads/covers/default.png
+/uploads/media/default.png
+
+/embed.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Added downloads statistics (downloads counter for tracks, who downloaded the most)
+- Added IP logging for user registration
+- Added Admin option to limit the number of accounts registration allowed per IP
+- Added Open Sans font site-wide
+- Improved the player support for mobile devices
+- Improved the home-page (new animated background and other changes)
+- Improved interface elements (counters, statistics)
+- Improved the file name detection
+- Improved the translation
+- Fixed an issue with the base link of the track
+- Fixed the themes thumbnails not being correctly linked
+- Fixed an issue where invalid usernames profiles would allow html tags

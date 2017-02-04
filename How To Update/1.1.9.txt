@@ -1,0 +1,16 @@
+How to update from phpSound v1.1.8 to v1.1.9
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+
+/languages/english.php
+
+/sources/admin.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Added "Promote" option to promote an account to Pro Status in the Admin Panel
+- Added "Restore" option to the suspended tracks in the Admin Panel
+- Added track tag characters length limitation

@@ -1,0 +1,20 @@
+How to update from phpSound v1.0.4 to v1.0.5
+
+---------------------------------------------------------------------------
+--------------------------------- MySQL -----------------------------------
+Log-in into phpMyAdmin (or your MySQL database) and on the SQL tab run the following query:
+
+ALTER TABLE  `playlists` CHANGE  `name`  `name` VARCHAR( 128 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL;
+ALTER TABLE  `playlists` CHANGE  `description`  `description` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Improved character support for the playlist names and descriptions
+- Improved character support for tags on tracks (categories)
+- Improved the translation ('Like' string is not used for the CSS class anymore) 

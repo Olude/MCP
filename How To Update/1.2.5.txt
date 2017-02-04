@@ -1,0 +1,38 @@
+How to update from phpSound v1.2.4 to v1.2.5 [Don't forget to back up your database/files before proceeding]
+----------------------------------------------------------------------------
+--------------------------------- MySQL ------------------------------------
+Log-in into phpMyAdmin (or your MySQL database) and on the SQL tab run the following query:
+
+----------------------------------------------------------------------------
+---------------------------------- FTP -------------------------------------
+Upload and replace the following files on your server:
+
+/includes/classes.php
+
+/languages/english.php
+
+/requests/post_track.php
+
+/sources/track.php
+/sources/welcome.php
+
+/themes/sound/html/track/edit.html
+/themes/sound/js/functions.js
+/themes/sound/info.php
+/themes/sound/style.css
+
+info.php
+embed.php
+
+----------------------------------------------------------------------------
+-------------------------------- Changelog ---------------------------------
+- Added multi-file upload (you can now upload an entire album at once)
+- Added client side upload verification (faster errors without uploading files)
+- Updated the embedded player to count plays at the start of a song
+- Improved the English translation
+- Fixed the visual notifications for new users not being ON by default
+- Fixed the Popular section on Welcome page showing private tracks
+- Fixed the track being saved when an error occured during artwork validation
+- Fixed the track artwork being saved when an error occured during track validation
+- Fixed the track artwork not showing when being shared on Facebook
+- Other minor improvements
